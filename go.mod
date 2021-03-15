@@ -56,6 +56,7 @@ require (
 	github.com/nishanths/predeclared v0.2.1
 	github.com/pkg/errors v0.9.1
 	github.com/polyfloyd/go-errorlint v0.0.0-20201127212506-19bd8db6546f
+	github.com/rosberry/go-zerolog-event-sent v0.0.1
 	github.com/ryancurrah/gomodguard v1.2.0
 	github.com/ryanrolds/sqlclosecheck v0.3.0
 	github.com/sanposhiho/wastedassign v0.2.0

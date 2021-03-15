@@ -401,6 +401,10 @@ func (m Manager) GetAllSupportedLinterConfigs() []*linter.Config {
 			WithPresets(linter.PresetStyle).
 			WithLoadForGoAnalysis().
 			WithURL("https://github.com/ldez/gomoddirectives"),
+		linter.NewConfig(golinters.NewZerocheck()).
+			//WithLoadFiles().
+			//WithLoadForGoAnalysis().
+			WithURL("github.com/rosberry/go-zerolog-event-sent"),
 
 		// nolintlint must be last because it looks at the results of all the previous linters for unused nolint directives
 		linter.NewConfig(golinters.NewNoLintLint()).
